@@ -61,7 +61,7 @@ public class TpGr10 {
         // message de presentation du logiciel 
         
         System.out.println (" Bonjour! ");
-        System.out.println ( "Bienvenu(e) a notre programme de collecte de données statistiques ");
+        System.out.println (" Bienvenu(e) a notre programme de collecte de données statistiques ");
         System.out.println (" Le système collecte et calcule le statistique de tout les utilisatuers ");
         System.out.println();
         
@@ -281,87 +281,273 @@ public class TpGr10 {
                 System.out.println( "STATISTIQUES" );
                 System.out.println( "Total répondants : " + ( totalSexeMasc + totalSexeFem ));
                 System.out.println( "Total hommes : " + totalSexeMasc );
-                System.out.println( "Total hommes : " + totalSexeFem );
+                System.out.println( "Total femmes : " + totalSexeFem );
                 System.out.println();
                 System.out.println();
+                
+                System.out.print("Appuyez sur ENTER pour continuer : ");
+                Clavier.lireFinLigne();
+                
                 System.out.print( "SAISONS" );
                 System.out.println();
                 System.out.print( "PRINTEMPS" );
                 System.out.println();
-                System.out.println( "Pourcentage hommes : " + ( printempsMasc / ( printempsMasc + printempsFem )) * 100 + " %" );
-                System.out.println( "Pourcentage femmes : " + ( printempsFem / ( printempsMasc + printempsFem )) * 100 + " %" );
+                if (printempsMasc == 0){ 
+                    System.out.println( "Pourcentage hommes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage hommes : " + ( printempsMasc / ( printempsMasc + printempsFem )) * 100 + " %" );
+                }  
+                
+                if (printempsFem == 0) {
+                    System.out.println( "Pourcentage femmes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage femmes : " + ( printempsFem / ( printempsMasc + printempsFem )) * 100 + " %" );
+                }
                 System.out.println();
                 System.out.print( "ETE" );
                 System.out.println();
-                System.out.println( "Pourcentage hommes :" + ( eteMasc / ( eteMasc + eteFem )) * 100 + " %" );
-                System.out.println( "Pourcentage femmes :" + ( eteFem / ( eteMasc + eteFem )) * 100 + " %" );
+                if (eteMasc == 0){ 
+                    System.out.println( "Pourcentage hommes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage hommes :" + ( eteMasc / ( eteMasc + eteFem )) * 100 + " %" );
+                }
+                
+                if (eteFem == 0){ 
+                    System.out.println( "Pourcentage femmes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage femmes :" + ( eteFem / ( eteMasc + eteFem )) * 100 + " %" );
+                }
                 System.out.println();
                 System.out.print( "AUTOMNE" );
                 System.out.println();
-                System.out.println( "Pourcentage hommes : " + ( automneMasc / ( automneMasc + automneFem )) * 100 + " %" );
-                System.out.println( "Pourcentage femmes : " + ( automneFem / ( automneMasc + automneFem )) * 100 + " %" );
+                if (automneMasc  == 0){ 
+                    System.out.println( "Pourcentage hommes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage hommes : " + ( automneMasc / ( automneMasc + automneFem )) * 100 + " %" );
+                }
+                
+                if (automneFem  == 0){ 
+                    System.out.println( "Pourcentage femmes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage femmes : " + ( automneFem / ( automneMasc + automneFem )) * 100 + " %" );
+                }
                 System.out.println();
                 System.out.print( "Hiver" );
                 System.out.println();
-                System.out.println( "Pourcentage hommes : " + ( hiverMasc / ( hiverMasc + hiverFem )) * 100 + " %" );
-                System.out.println("Pourcentage femmes : " + ( hiverFem / ( hiverMasc + hiverFem )) * 100 + " %" );
+                if (hiverMasc  == 0){ 
+                    System.out.println( "Pourcentage hommes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage hommes : " + ( hiverMasc / ( hiverMasc + hiverFem )) * 100 + " %" );
+                }
+                
+                if (hiverFem  == 0){ 
+                    System.out.println( "Pourcentage femmes : 0% ");
+                }else{
+                    System.out.println("Pourcentage femmes : " + ( hiverFem / ( hiverMasc + hiverFem )) * 100 + " %" );
+                }
                 System.out.println();
                 System.out.println();
+               
+                System.out.print("Appuyez sur ENTER pour continuer : ");
+                Clavier.lireFinLigne();
+                                
                 System.out.print( "COULEUR" );
                 System.out.println();
                 System.out.print( "ROUGE" );
                 System.out.println();
-                System.out.println( "Pourcentage hommes :" + ( rougeMasc / (rougeMasc + rougeFem )) * 100 + " %" );
-                System.out.println( "Pourcentage femmes :" + ( rougeFem / (rougeMasc + rougeFem )) * 100 + " %" );
+                if (rougeMasc  == 0){ 
+                    System.out.println( "Pourcentage hommes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage hommes :" + ( rougeMasc / (rougeMasc + rougeFem )) * 100 + " %" );
+                }
+                
+                if (rougeFem  == 0){ 
+                    System.out.println( "Pourcentage femmes : 0% ");
+                }else{
+                    System.out.println( "Pourcentage femmes :" + ( rougeFem / (rougeMasc + rougeFem )) * 100 + " %" );
+                }
                 System.out.println();
                 System.out.print( "JAUNE" );
                 System.out.println();
-                System.out.print( "Pourcentage hommes : " + ( jauneMasc / ( jauneMasc + jauneFem )) * 100 + " %" );
-                System.out.print( "Pourcentage femmes : " + ( jauneFem / ( jauneMasc + jauneFem )) * 100 + " %" );
+                if (jauneMasc  == 0){ 
+                    System.out.println( "Pourcentage hommes : 0% ");
+                }else{
+                    System.out.print( "Pourcentage hommes : " + ( jauneMasc / ( jauneMasc + jauneFem )) * 100 + " %" );
+                }
+                
+                if (jauneFem  == 0){ 
+                    System.out.println( "Pourcentage femmes : 0% ");
+                }else{
+                    System.out.print( "Pourcentage femmes : " + ( jauneFem / ( jauneMasc + jauneFem )) * 100 + " %" );
+                }
                 System.out.println();
                 System.out.print( "BLEU" );
                 System.out.println();
-                System.out.print( "Pourcentage hommes : " + ( bleuMasc / ( bleuMasc + bleuFem )) * 100 + " %" );
-                System.out.print( "Pourcentage femmes : " + ( bleuFem / ( bleuMasc / ( bleuMasc + bleuFem )) * 100 + " %" ));
+                if (bleuMasc  == 0){ 
+                    System.out.println( "Pourcentage hommes : 0% ");
+                }else{
+                    System.out.print( "Pourcentage hommes : " + ( bleuMasc / ( bleuMasc + bleuFem )) * 100 + " %" );
+                }
+                
+                if (bleuFem  == 0){ 
+                    System.out.println( "Pourcentage femmes : 0% ");
+                }else{
+                    System.out.print( "Pourcentage femmes : " + ( bleuFem / ( bleuMasc / ( bleuMasc + bleuFem )) * 100 + " %" ));
+                }
                 System.out.println();
                 System.out.println();
+                
+                System.out.print("Appuyez sur ENTER pour continuer : ");
+                Clavier.lireFinLigne();
+                
                 System.out.print( "GROUPE D'AGE 1" );
                 System.out.println();
-                System.out.println("Printemps : " + ( saisonGru1Pri / ( saisonGru1Pri + saisonGru1Ete + saisonGru1Aut + saisonGru1Hiv )) * 100 + " %" );
-                System.out.println("Ete : " + ( saisonGru1Ete / ( saisonGru1Pri + saisonGru1Ete + saisonGru1Aut + saisonGru1Hiv )) * 100 + " %" );
-                System.out.println("Automne : " + ( saisonGru1Aut / ( saisonGru1Pri + saisonGru1Ete + saisonGru1Aut + saisonGru1Hiv )) * 100 + " %" );
-                System.out.println("Hiver : "  + ( saisonGru1Hiv / ( saisonGru1Pri + saisonGru1Ete + saisonGru1Aut + saisonGru1Hiv )) * 100 + " %" );
+                if (saisonGru1Pri  == 0){ 
+                    System.out.println( "Pourcentage printemps : 0% ");
+                }else{
+                    System.out.println("Printemps : " + ( saisonGru1Pri / ( saisonGru1Pri + saisonGru1Ete + saisonGru1Aut + saisonGru1Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru1Ete == 0){ 
+                    System.out.println( "Pourcentage ete : 0% ");
+                }else{
+                    System.out.println("Ete : " + ( saisonGru1Ete / ( saisonGru1Pri + saisonGru1Ete + saisonGru1Aut + saisonGru1Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru1Aut == 0){ 
+                    System.out.println( "Pourcentage automne : 0% ");
+                }else{
+                    System.out.println("Automne : " + ( saisonGru1Aut / ( saisonGru1Pri + saisonGru1Ete + saisonGru1Aut + saisonGru1Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru1Hiv == 0){ 
+                    System.out.println( "Pourcentage hiver : 0% ");
+                }else{
+                    System.out.println("Hiver : "  + ( saisonGru1Hiv / ( saisonGru1Pri + saisonGru1Ete + saisonGru1Aut + saisonGru1Hiv )) * 100 + " %" );
+                }
                 System.out.println();
+                
+                System.out.print("Appuyez sur ENTER pour continuer : ");
+                Clavier.lireFinLigne();
+                
                 System.out.print("GROUPE D'AGE 2");
                 System.out.println();
-                System.out.println("Printemps : " + ( saisonGru2Pri / ( saisonGru2Pri + saisonGru2Ete + saisonGru2Aut + saisonGru2Hiv )) * 100 + " %" );
-                System.out.println("Ete : " + ( saisonGru2Ete / ( saisonGru2Pri + saisonGru2Ete + saisonGru2Aut + saisonGru2Hiv )) * 100 + " %" );
-                System.out.println("Automne : " + ( saisonGru2Aut / ( saisonGru2Pri + saisonGru2Ete + saisonGru2Aut + saisonGru2Hiv )) * 100 + " %" );
-                System.out.println("Hiver : " + ( saisonGru2Hiv / ( saisonGru2Pri + saisonGru2Ete + saisonGru2Aut + saisonGru2Hiv )) * 100+ " %" );
+                if (saisonGru2Pri  == 0){ 
+                    System.out.println( "Pourcentage printemps : 0% ");
+                }else{
+                    System.out.println("Printemps : " + ( saisonGru2Pri / ( saisonGru2Pri + saisonGru2Ete + saisonGru2Aut + saisonGru2Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru2Ete == 0){ 
+                    System.out.println( "Pourcentage ete : 0% ");
+                }else{
+                    System.out.println("Ete : " + ( saisonGru2Ete / ( saisonGru2Pri + saisonGru2Ete + saisonGru2Aut + saisonGru2Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru2Aut == 0){ 
+                    System.out.println( "Pourcentage automne : 0% ");
+                }else{
+                    System.out.println("Automne : " + ( saisonGru2Aut / ( saisonGru2Pri + saisonGru2Ete + saisonGru2Aut + saisonGru2Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru2Hiv == 0){ 
+                    System.out.println( "Pourcentage hiver : 0% ");
+                }else{
+                    System.out.println("Hiver : " + ( saisonGru2Hiv / ( saisonGru2Pri + saisonGru2Ete + saisonGru2Aut + saisonGru2Hiv )) * 100+ " %" );
+                }
                 System.out.println();
+                
+                System.out.print("Appuyez sur ENTER pour continuer : ");
+                Clavier.lireFinLigne();
+                
                 System.out.print("GROUPE D'AGE 3");
                 System.out.println();
-                System.out.println("Printemps :" + ( saisonGru3Pri / ( saisonGru3Pri + saisonGru3Ete + saisonGru3Aut + saisonGru3Hiv )) * 100 + " %" );
-                System.out.println("Ete : " + ( saisonGru3Ete / ( saisonGru3Pri + saisonGru3Ete + saisonGru3Aut + saisonGru3Hiv )) * 100 + " %" );
-                System.out.println("Automne : " + ( saisonGru3Aut / ( saisonGru3Pri + saisonGru3Ete + saisonGru3Aut + saisonGru3Hiv )) * 100 + " %" );
-                System.out.println("Hiver : " + ( saisonGru3Hiv / ( saisonGru3Pri + saisonGru3Ete + saisonGru3Aut + saisonGru3Hiv )) * 100 + " %" );
+                if (saisonGru3Pri  == 0){ 
+                    System.out.println( "Pourcentage printemps : 0% ");
+                }else{
+                    System.out.println("Printemps :" + ( saisonGru3Pri / ( saisonGru3Pri + saisonGru3Ete + saisonGru3Aut + saisonGru3Hiv )) * 100 + " %" );
+                }
+                
+                 if (saisonGru3Ete == 0){ 
+                    System.out.println( "Pourcentage ete : 0% ");
+                }else{
+                    System.out.println("Ete : " + ( saisonGru3Ete / ( saisonGru3Pri + saisonGru3Ete + saisonGru3Aut + saisonGru3Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru3Aut == 0){ 
+                    System.out.println( "Pourcentage automne : 0% ");
+                }else{
+                    System.out.println("Automne : " + ( saisonGru3Aut / ( saisonGru3Pri + saisonGru3Ete + saisonGru3Aut + saisonGru3Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru3Hiv == 0){ 
+                    System.out.println( "Pourcentage hiver : 0% ");
+                }else{
+                    System.out.println("Hiver : " + ( saisonGru3Hiv / ( saisonGru3Pri + saisonGru3Ete + saisonGru3Aut + saisonGru3Hiv )) * 100 + " %" );
+                }
                 System.out.println();
+                
+                System.out.print("Appuyez sur ENTER pour continuer : ");
+                Clavier.lireFinLigne();
+                
                 System.out.print("GROUPE D'AGE 4");
                 System.out.println();
-                System.out.println("Printemps : " + ( saisonGru4Pri / ( saisonGru4Pri + saisonGru4Ete + saisonGru4Aut + saisonGru4Hiv )) * 100 + " %" );
-                System.out.println("Ete : " + ( saisonGru4Ete / ( saisonGru4Pri + saisonGru4Ete + saisonGru4Aut + saisonGru4Hiv )) * 100 + " %" );
-                System.out.println("Automne: " + ( saisonGru4Aut / ( saisonGru4Pri + saisonGru4Ete + saisonGru4Aut + saisonGru4Hiv )) * 100 + " %" );
-                System.out.println("Hiver : " + ( saisonGru4Hiv / ( saisonGru4Pri + saisonGru4Ete + saisonGru4Aut + saisonGru4Hiv )) * 100 + " %" );
+                if (saisonGru4Pri  == 0){ 
+                    System.out.println( "Pourcentage printemps : 0% ");
+                }else{
+                    System.out.println("Printemps : " + ( saisonGru4Pri / ( saisonGru4Pri + saisonGru4Ete + saisonGru4Aut + saisonGru4Hiv )) * 100 + " %" );
+                }
+                
+                 if (saisonGru4Ete == 0){ 
+                    System.out.println( "Pourcentage ete : 0% ");
+                }else{
+                    System.out.println("Ete : " + ( saisonGru4Ete / ( saisonGru4Pri + saisonGru4Ete + saisonGru4Aut + saisonGru4Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru4Aut == 0){ 
+                    System.out.println( "Pourcentage automne : 0% ");
+                }else{
+                    System.out.println("Automne: " + ( saisonGru4Aut / ( saisonGru4Pri + saisonGru4Ete + saisonGru4Aut + saisonGru4Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru4Hiv == 0){ 
+                    System.out.println( "Pourcentage hiver : 0% ");
+                }else{
+                    System.out.println("Hiver : " + ( saisonGru4Hiv / ( saisonGru4Pri + saisonGru4Ete + saisonGru4Aut + saisonGru4Hiv )) * 100 + " %" );
+                }
                 System.out.println();
+                
+                System.out.print("Appuyez sur ENTER pour continuer : ");
+                Clavier.lireFinLigne();
+                
                 System.out.print("GROUPE D'AGE 5");
                 System.out.println();
-                System.out.println("Printemps : " + ( saisonGru5Pri / ( saisonGru5Pri + saisonGru5Ete + saisonGru5Aut + saisonGru5Hiv )) * 100 + " %" );
-                System.out.println("Ete : " + ( saisonGru5Ete / ( saisonGru5Pri + saisonGru5Ete + saisonGru5Aut + saisonGru5Hiv )) * 100 + " %" );
-                System.out.println("Automne : " + ( saisonGru5Aut / ( saisonGru5Pri + saisonGru5Ete + saisonGru5Aut + saisonGru5Hiv )) * 100 + " %" );
-                System.out.println("Hiver : " + ( saisonGru5Hiv / ( saisonGru5Pri + saisonGru5Ete + saisonGru5Aut + saisonGru5Hiv )) * 100 + " %" );
+                if (saisonGru5Pri  == 0){ 
+                    System.out.println( "Pourcentage printemps : 0% ");
+                }else{
+                    System.out.println("Printemps : " + ( saisonGru5Pri / ( saisonGru5Pri + saisonGru5Ete + saisonGru5Aut + saisonGru5Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru5Ete == 0){ 
+                    System.out.println( "Pourcentage ete : 0% ");
+                }else{
+                    System.out.println("Ete : " + ( saisonGru5Ete / ( saisonGru5Pri + saisonGru5Ete + saisonGru5Aut + saisonGru5Hiv )) * 100 + " %" );
+                }
+                
+                 if (saisonGru5Aut == 0){ 
+                    System.out.println( "Pourcentage automne : 0% ");
+                }else{
+                    System.out.println("Automne : " + ( saisonGru5Aut / ( saisonGru5Pri + saisonGru5Ete + saisonGru5Aut + saisonGru5Hiv )) * 100 + " %" );
+                }
+                
+                if (saisonGru5Hiv == 0){ 
+                    System.out.println( "Pourcentage hiver : 0% ");
+                }else{
+                    System.out.println("Hiver : " + ( saisonGru5Hiv / ( saisonGru5Pri + saisonGru5Ete + saisonGru5Aut + saisonGru5Hiv )) * 100 + " %" );
+                }
             }
        
         }        
                
     }
-}// 
+}// TpGr10
