@@ -58,6 +58,13 @@ public class TP1 {
         int couleurGru5Jau = 0;
         int couleurGru5Ble = 0;
 
+        // message de presentation du logiciel 
+        
+        System.out.println ( " Bonjour! ");
+        System.out.println ( " Bienvenu(e) a notre programme de collecte de données statistiques " );
+        System.out.println ( " Le système collecte et calcule le statistique de tout les utilisatuers " );
+        System.out.println();
+        
         System.out.print ("Vous désirez entrer des informations aux fins de recherche et de statistique? (O,o,N,n): ");
         choix = Clavier.lireCharLn();
          
@@ -98,6 +105,7 @@ public class TP1 {
             System.out.println ("4 - 31 à 45 ans");
             System.out.println ("5 - 46 ans et plus");
             groupeAge = Clavier.lireInt();
+            System.out.println();
             
             while ( groupeAge <1 || groupeAge >5  ){
                 System.out.println("Erreur! Choix invalide!"); 
@@ -113,6 +121,7 @@ public class TP1 {
             System.out.println ("3 - automne");
             System.out.println ("4 - hiver");
             saison = Clavier.lireInt();
+            System.out.println();
             
             while (saison <1 || saison >4  ){
                 System.out.println("Erreur! Choix invalide!"); 
@@ -193,6 +202,7 @@ public class TP1 {
             System.out.println ("2 - jaune");
             System.out.println ("3 - bleu");
             couleur = Clavier.lireIntLn();
+            System.out.println();
             
             while (couleur <1 || couleur >3  ){
                 System.out.println("Erreur! Choix invalide!"); 
@@ -257,12 +267,13 @@ public class TP1 {
             System.out.println ("Vous désirez entrer des informations aux fins de recherche et de statistique?");
             choix = Clavier.lireCharLn();
             
-            while (choix != 'O' && choix != 'o' && choix != 'N'  && choix != 'n'){
-                System.out.println("Erreur! Choix invalide!"); 
-                System.out.print("Entrez une options valide (O,o,N,n) : ");
-                choix = Clavier.lireCharLn();  
-            }
+            while (choix != 'O' && choix != 'o' && choix != 'N' && choix != 'n'){ 
+            System.out.println("Erreur! Choix invalide!"); 
+            System.out.print("Entrez une options valide (O,o,N,n) : ");
+            choix = Clavier.lireCharLn();  
+           } 
         }
+    
     
         // affichage des statistiques 
         
@@ -350,4 +361,3 @@ public class TP1 {
         
     }        
 }
-
