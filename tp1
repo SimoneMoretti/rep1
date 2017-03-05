@@ -1,3 +1,16 @@
+
+/**
+ * I N F x 1 2 0
+ *
+ * Decrivez votre classe TP1 ici.
+ * 
+ * @author (votre nom) 
+ * @version (une date)
+ *
+ * (votre code permanent)
+ * (votre adresse de courriel)
+ */
+
 public class TP1 {
     public static void main (String[] params) {
         
@@ -91,33 +104,33 @@ public class TP1 {
             
             // choisir le groupe d'age
             
-            System.out.println ("Quel est votre groupe d'age?");
+            System.out.println ("Quel est votre groupe d'age? ");
             System.out.println ("1 - 5 à 12 ans");
             System.out.println ("2 - 13 à 18 ans");
             System.out.println ("3 - 19 à 30 ans");
             System.out.println ("4 - 31 à 45 ans");
             System.out.println ("5 - 46 ans et plus");
-            groupeAge = Clavier.lireChar();
+            groupeAge = Clavier.lireInt();
             
-            while (groupeAge <1 && groupeAge >5  ){
+            while ( groupeAge <1 || groupeAge >5  ){
                 System.out.println("Erreur! Choix invalide!"); 
                 System.out.print("Entrez une options valide (1,2,3,4 ou 5) : ");
-                groupeAge = Clavier.lireIntLn();  
+                groupeAge = Clavier.lireInt();  
             }
             
             // choisir la saison pefere
             
-            System.out.println ("Quel est votre saison preféree?");
+            System.out.println ("Quel est votre saison preféree? ");
             System.out.println ("1 - printemps");
             System.out.println ("2 - ete");
             System.out.println ("3 - automne");
             System.out.println ("4 - hiver");
             saison = Clavier.lireInt();
             
-            while (saison <1 && saison >4  ){
+            while (saison <1 || saison >4  ){
                 System.out.println("Erreur! Choix invalide!"); 
                 System.out.print("Entrez une options valide (1,2,3 ou 4) : ");
-                saison = Clavier.lireIntLn();  
+                saison = Clavier.lireInt();  
             }
             
             // actualiser les valeurs de la saison par sexe 
@@ -194,7 +207,7 @@ public class TP1 {
             System.out.println ("3 - bleu");
             couleur = Clavier.lireIntLn();
             
-            while (couleur <1 && couleur >3  ){
+            while (couleur <1 || couleur >3  ){
                 System.out.println("Erreur! Choix invalide!"); 
                 System.out.print("Entrez une options valide (1,2 ou 3) : ");
                 couleur = Clavier.lireInt();  
@@ -350,3 +363,4 @@ public class TP1 {
         
     }        
 }
+
