@@ -97,7 +97,7 @@ public class TP1 {
             System.out.println ("3 - 19 à 30 ans");
             System.out.println ("4 - 31 à 45 ans");
             System.out.println ("5 - 46 ans et plus");
-            groupeAge = Clavier.lireCharLn();
+            groupeAge = Clavier.lireChar();
             
             while (groupeAge <1 && groupeAge >5  ){
                 System.out.println("Erreur! Choix invalide!"); 
@@ -112,9 +112,9 @@ public class TP1 {
             System.out.println ("2 - ete");
             System.out.println ("3 - automne");
             System.out.println ("4 - hiver");
-            saison = Clavier.lireIntLn();
+            saison = Clavier.lireInt();
             
-            while (groupeAge <1 && groupeAge >4  ){
+            while (saison <1 && saison >4  ){
                 System.out.println("Erreur! Choix invalide!"); 
                 System.out.print("Entrez une options valide (1,2,3 ou 4) : ");
                 saison = Clavier.lireIntLn();  
@@ -197,7 +197,7 @@ public class TP1 {
             while (couleur <1 && couleur >3  ){
                 System.out.println("Erreur! Choix invalide!"); 
                 System.out.print("Entrez une options valide (1,2 ou 3) : ");
-                couleur = Clavier.lireIntLn();  
+                couleur = Clavier.lireInt();  
             }
             
             // actualiser les valuers des couleurs par sexe
@@ -261,11 +261,6 @@ public class TP1 {
                 System.out.println("Erreur! Choix invalide!"); 
                 System.out.print("Entrez une options valide (O,o,N,n) : ");
                 choix = Clavier.lireCharLn();  
-            }
-            
-            if (choix == 'N' || choix == 'n' ){
-                choix = Clavier.lireChar();
-          
             }
         }
     
